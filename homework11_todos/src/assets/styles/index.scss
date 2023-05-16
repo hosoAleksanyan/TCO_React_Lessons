@@ -1,0 +1,70 @@
+@mixin btn {
+    font-size: 17px;
+    background-color: lightgray;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.todoApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 5% auto;
+}
+
+.list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .list-item {
+        font-size: 20px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 2%;
+        margin-top: 1.5%;
+        box-sizing: border-box;
+
+        border: 1px solid grey;
+        width: 100%;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin-top: 3%;
+
+        button {
+            margin: 0 1%;
+            @include btn;
+        }
+    }
+}
+.addTask{
+    width: 100%;
+    margin-bottom: 3%;
+   
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    input{
+        font-size: 17px;
+        width:58%;
+        border-radius: 0%;
+        border: 1px solid gray;
+    }
+    :last-child{
+        @include btn;
+        width: 38%;
+    }
+}

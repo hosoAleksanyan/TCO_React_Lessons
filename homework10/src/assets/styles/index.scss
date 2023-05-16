@@ -1,0 +1,193 @@
+* {
+    font-family: sans-serif;
+}
+
+@mixin go-to-button {
+    background-color: #FFC107;
+    font-weight: 500;
+    border: 1px solid #E91E63;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 0.5%;
+    margin-top: 2%;
+    box-shadow: 0 0 20px #764EBE;
+    cursor: pointer;
+}
+
+.moviesList {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+    .movieCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 13px #7446c9;
+        cursor: pointer;
+
+        width: 17%;
+        margin: 1%;
+        padding: 0.5%;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        figure {
+            margin: 0 0 10%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+
+            }
+        }
+
+        .cardBody {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+
+            span {
+                font-style: italic;
+                padding-bottom: 5%;
+                text-align: start;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 2%;
+                margin: 0;
+                background-color: #b994ff;
+                border-radius: 5px;
+                border: 0.5px solid #764EBE;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #FFC107;
+                border: 1px solid #E91E63;
+            }
+        }
+    }
+}
+
+.modalBox {
+    width: 50%;
+    height: 30%;
+    position: fixed;
+    z-index: 3;
+    top: 25%;
+    left: 22%;
+    background: #b994ffe7;
+
+    button{
+        font-size: 18px;
+        background-color: #FFC107;
+        border: 1px solid #E91E63;
+        margin-top: 1%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        margin: 9% auto 0;
+
+        input {
+            font-size: 18px;
+            width: 97.5%;
+            margin: 1%;
+        }
+
+        :last-child {
+            width: 100%;
+        }
+    }
+}
+
+.goBackBtn {
+    @include go-to-button;
+    position: fixed;
+    z-index: 3;
+    width: 10%;
+    left: 1%;
+    top: 1%;
+}
+
+.goLogin {
+    @include go-to-button;
+    position: fixed;
+    z-index: 3;
+    width: 10%;
+    left: 1%;
+    top: 1%;
+}
+
+.movieDetails {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    figure {
+        width: 19%;
+        box-shadow: 0 0 13px #7446c9;
+        padding: 1%;
+        margin-right: 10%;
+    }
+
+    table {
+        width: 50%;
+        font-size: 20px;
+        box-shadow: 0 0 13px #E91E63;
+        border-collapse: collapse;
+
+        th,
+        td {
+            text-align: start;
+            border: 1px solid #E91E63;
+            padding: 1% 5px;
+        }
+
+        button {
+            font-size: 20px;
+            background-color: #ac8de4;
+            border: 1px solid #ac8de4;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #FFC107;
+        }
+    }
+
+}
+
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin: 15% auto;
+    padding: 3% 3% 1%;
+    border-radius: 5px;
+    border: 1px solid #7446c9;
+    background-color: #b994ff;
+    box-shadow: 0 0 15px #E91E63;
+
+
+    input{
+        border-radius: 5px;
+        font-size: 20px;
+        margin: 1%;
+        width: 98.5%;
+    }
+    :last-child{
+        width: 100%;
+        margin: 3% 0 0;
+        background-color: #ff84ad;
+        border: 1px solid #E91E63;
+    }
+}

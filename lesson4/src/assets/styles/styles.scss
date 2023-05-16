@@ -1,0 +1,14 @@
+$color: rgb(0, 46, 0);
+
+.container{
+    background-color: steelblue;
+    width: 80%;
+    margin: 0 auto;
+
+    h1 {
+        font-family: initial;
+        color: $color;
+    }
+}   
+
+// variable mixin include

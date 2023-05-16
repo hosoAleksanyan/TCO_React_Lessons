@@ -1,0 +1,92 @@
+* {
+  font-size: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 5px;
+  border: 2px inset grey;
+  background-color: rgb(216, 216, 216);
+}
+
+button:hover {
+  border: 2px outset grey;
+  background-color: rgb(234, 234, 234);
+  cursor: pointer;
+}
+
+
+p {
+  margin: 0 0 0 3%;
+  font-weight: 500;
+}
+
+input {
+  border-radius: 5px;
+  background-color: rgb(227, 227, 227);
+}
+
+.list,
+th,
+td {
+  text-align: start;
+}
+
+.header {
+  padding: 2%;
+  border-radius: 10px;
+  background-color: rgb(205, 244, 232);
+  margin-top: 0.5%;
+}
+
+.signInBox {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.signInBox div {
+  display: flex;
+  align-items: baseline;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(165, 215, 255);
+  padding: 1%;
+  border-radius: 10px;
+  margin-top: 2.5%;
+}
+
+.searchBox>button {
+  margin-right: 1.7%;
+}
+
+.list {
+  width: 100%;
+  background-color: rgb(255, 236, 195);
+  border-radius: 10px;
+  margin-top: 1.5%;
+}
+
+.list td {
+  height: 40px;
+}
+
+.list th {
+  height: 50px;
+}
+
+.un {
+  width: 35%;
+}
+
+.ua {
+  width: 35%;
+}

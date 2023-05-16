@@ -1,0 +1,108 @@
+* {
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+$mBorder: 1px solid #d2d2d2;
+
+@mixin centered {
+    width: 60%;
+    margin: 2% auto
+}
+
+@mixin buttons {
+    color: white;
+    font-weight: lighter;
+    display: block;
+    padding: 1%;
+    background-color: #16A3B7;
+    border: 1px solid #16A3B7;
+}
+
+.box-title{
+    font-size: 32px;
+    text-align: center
+}
+
+.to-do-input {
+    @include centered;
+    box-sizing: border-box;
+    border: $mBorder;
+    padding: 1%;
+    margin-top: 0;
+
+    input {
+        border: $mBorder;
+        width: 98%;
+        padding: 1%;
+        display: block;
+        margin: 0 auto 2%;
+    }
+
+    button {
+        @include buttons;
+        width: 100%;
+        margin: 2% auto 0;
+    }
+
+    button:hover {
+        background-color: #02c3dd;
+        border: 1px solid #02c3dd;
+        cursor: pointer;
+    }
+}
+
+.to-do-list {
+    @include centered;
+
+    .show-list-btn {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        button {
+            @include buttons;
+            width: 30%;
+            padding: 1%;
+        }
+
+        button:hover {
+            background-color: #02c3dd;
+            border: 1px solid #02c3dd;
+            cursor: pointer;
+        }
+    }
+
+    .tasks {
+        padding: 0;
+        list-style: none;
+        margin-top: 6%;
+
+        li {
+            font-weight: 600;
+            padding: 1.5%;
+            border: $mBorder;
+            margin-top: 2%;
+        }
+    }
+
+    .del-tasks {
+        margin-top: 5%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        button {
+            @include buttons;
+            width: 45%;
+            background-color: #DB3345;
+            border: 1px solid #DB3345;
+        }
+
+        button:hover {
+            background-color: #fc4053;
+            border: 1px solid #fc4053;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+list
+state / state in class component
+
+lifecycle
+purecomponent
+HOC\
+useEffect

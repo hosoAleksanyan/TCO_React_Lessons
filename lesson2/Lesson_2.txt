@@ -1,0 +1,7 @@
+SPA - Single Page Application
+MPA - Multi Page Application
+
+npm i/install (module name)
+npm install - download node_modules
+
+props

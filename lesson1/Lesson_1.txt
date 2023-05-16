@@ -1,0 +1,4 @@
+npm
+npx
+npm create-react-app
+npm start

@@ -1,0 +1,244 @@
+* {
+    font-size: 18px;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+@mixin navBtn {
+    font-weight: 800;
+    background-color: rgb(134, 205, 233);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+}
+
+@mixin navBtnHover {
+    background-color: rgb(133, 213, 245);
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+@mixin formBox {
+    background-color: white;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    width: 30%;
+    margin: 13% auto 0;
+    box-shadow: 0 0 20px 0 rgb(114, 213, 132), 0 0 20px 0 rgb(114, 213, 132);
+    border-radius: 2px;
+    padding: 2%;
+}
+
+@mixin formBoxInput {
+    width: 80%;
+    padding: 1%;
+    margin: 3px auto;
+}
+
+@mixin formBoxBtn {
+    width: 82.5%;
+    margin: 3px auto;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-top: 2%;
+    padding: 1%;
+    background-color: rgb(114, 213, 132);
+    background-color: rgb(114, 213, 132);
+    box-shadow: none;
+}
+
+@mixin formBoxBtnHover {
+    cursor: pointer;
+    background-color: rgb(131, 230, 149);
+    box-shadow: none;
+}
+
+.homePage {
+    text-align: center;
+    width: 30%;
+    margin: 20% auto 0;
+
+    button {
+        @include navBtn;
+        width: 50%;
+        padding: 1% 3%;
+    }
+
+    button:hover {
+        @include navBtnHover;
+    }
+}
+
+
+.loginPage {
+    .loginForm {
+        @include formBox;
+
+        p {
+            margin: 0 auto 3%;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        input {
+            @include formBoxInput;
+        }
+
+        .button {
+            @include formBoxBtn;
+        }
+
+        .button:hover {
+            @include formBoxBtnHover;
+        }
+    }
+
+    button {
+        @include navBtn;
+        width: 10%;
+        padding: 1px 2px;
+        margin: 1%;
+    }
+
+    button:hover {
+        @include navBtnHover;
+    }
+}
+
+.usersPage {
+    >button {
+        @include navBtn;
+        width: 10%;
+        margin: 1%;
+    }
+
+    >button:hover {
+        @include navBtnHover();
+    }
+
+    .usersTable {
+        width: 50%;
+        background-color: white;
+        margin: 13% auto 0;
+        box-shadow: 0 0 20px 0 skyblue, 0 0 20px 0 skyblue;
+        text-align: center;
+
+        button {
+            background-color: skyblue;
+            border: 0.5px solid grey;
+            border-radius: 2px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(120, 197, 228);
+        }
+    }
+}
+
+.userPage {
+
+    >button {
+        @include navBtn;
+        width: 10%;
+        margin: 1%;
+    }
+
+    >button:hover {
+        @include navBtnHover();
+    }
+
+    .userTable {
+        text-align: start;
+        margin: 13% auto 0;
+        box-shadow: 0 0 20px 0 skyblue, 0 0 20px 0 skyblue;
+        background-color: white;
+        width: 30%;
+
+        th {
+            text-align: start;
+        }
+    }
+}
+
+.addUserPage {
+
+    >button {
+        @include navBtn;
+        margin: 1%;
+        width: 10%
+    }
+
+    >button {
+        @include navBtnHover;
+    }
+
+    .addForm {
+        @include formBox;
+        margin: 3% auto 3%;
+
+        input {
+            @include formBoxInput;
+        }
+
+        .button {
+            @include formBoxBtn;
+        }
+
+        .button:hover {
+            @include formBoxBtnHover;
+        }
+
+        .errorMessage {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            width: 82.5%;
+            color: #DB3345;
+            font-size: 17px
+        }
+    }
+
+    .successPage {
+
+        >button {
+            @include navBtn;
+            margin: 1%;
+            width: 10%;
+        }
+
+        >button:hover {
+            @include navBtnHover;
+        }
+
+        h1 {
+            font-size: 35px;
+            text-align: center;
+            color: seagreen;
+        }
+
+        table {
+            border: none;
+            width: 30%;
+
+            tr,
+            td,
+            th {
+                border: none;
+            }
+        }
+    }
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 1% 0;
+}
