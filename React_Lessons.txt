@@ -1,0 +1,139 @@
+[
+Lesson_1
+npm
+npx
+]
+-----------------------------------------
+
+
+
+[
+Lesson_2
+SPA - Single Page Application
+MPA - Multi Page Application
+
+npm i/install (module name)
+npm install - download node_modules
+
+props
+]
+-----------------------------------------
+
+
+
+[
+Lesson_3
+class Components
+state  useState
+hooks
+
+re-render
+events
+if else ( ? : )
+key={}
+]
+-----------------------------------------
+
+
+
+[
+Lesson_4
+
+inline style, dinamic
+
+... (destruct)
+
+scss (
+mixin & include
+variables )
+
+React Developer Tools
+]
+-----------------------------------------
+
+
+
+[
+Lesson_5
+list
+state / state in class component
+
+lifecycle
+purecomponent
+HOC\
+useEffect
+]
+-----------------------------------------
+
+
+
+[
+Lesson_6
+Virtual DOM
+]
+-----------------------------------------
+
+
+
+[
+Lesson_7
+useEffect()->didupdate, unmount
+
+PropTypes
+React.Fragment
+MEMO
+Ref
+]
+-----------------------------------------
+
+
+
+[
+Lesson_8
+<BrowserRouter>
+Route
+useNavigate()
+useLocation()
+link, navlink
+useParams()
+]
+-----------------------------------------
+
+
+
+[
+Lesson_9
+Form
+regEx
+stopPropagation()
+preventDefault()
+React Hook Form
+useMemo()
+useCallBack()
+]
+-----------------------------------------
+
+
+
+[
+Lesson 10
+Revising 
+]
+-----------------------------------------
+
+
+
+[
+Lesson 11
+Redux
+]
+-----------------------------------------
+
+
+
+[
+Lesson 12
+Context / useContext(), createContext()
+Axios
+]
+-----------------------------------------
