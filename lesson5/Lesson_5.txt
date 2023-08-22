@@ -5,3 +5,5 @@ lifecycle
 purecomponent
 HOC\
 useEffect
+
+https://dev-gang.ru/article/kak-ponjat-metody-zhiznennogo-cikla-komponenta-v-reactjs-m3v6725v7q/
